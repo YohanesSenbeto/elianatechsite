@@ -46,6 +46,4 @@
 <img src="https://th.bing.com/th/id/R.23d6ec354620f34e861e9774a054ad73?rik=406vii0gRRehmA&pid=ImgRaw&r=0" alt="Animated GIF">
 <br>
 	<div id="my-element">
-		<div>
-</body>
-</html>
+	
