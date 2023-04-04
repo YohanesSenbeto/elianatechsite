@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 	<title>WAN IP Subnet Mask and Default Gateway Finder</title>
@@ -48,8 +47,5 @@
 <br>
 	<div id="my-element">
 		<div>
-<br>
-<br>
-<img src="https://tech-talk.iitm.ac.in/wp-content/uploads/2020/09/mini2.jpg" alt="mini2.jpg"
 </body>
 </html>
