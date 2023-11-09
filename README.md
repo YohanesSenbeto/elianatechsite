@@ -11,8 +11,8 @@ License
 Getting Started
 To run this website locally, follow these steps:
 
-Clone the repository: git clone https://github.com/ethiotelecom/WANIPcalc.git
-Open the index.html file in a web browser.
+Clone the repository: git clone [https://github.com/ethiotelecom/WANIPcalc.git](https://github.com/YohanesSenbeto/my-website.git)
+Open the WANIPS.html file in a web browser.
 Features
 Display WAN IP, subnet mask, and default information based on user input.
 Responsive design for optimal viewing on different devices.
