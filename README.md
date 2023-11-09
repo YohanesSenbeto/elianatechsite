@@ -1,34 +1,36 @@
-<?php
-// Retrieve the user's WAN IP from the form
-$wan_ip = $_POST['wan_ip'];
+ethiotelecom/WANIPcalc
+This repository contains the code for the ethiotelecom/WANIPcalc website. The website is designed to provide information about WAN IP addresses in Ethiopia. Users can enter their WAN IP address to retrieve the subnet mask and default information.
 
-// Connect to your database (replace with your own credentials)
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "wantele";
-$conn = new mysqli($servername, $username, $password, $dbname);
+Table of Contents
+Getting Started
+Features
+Technologies Used
+Usage
+Contributing
+License
+Getting Started
+To run this website locally, follow these steps:
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+Clone the repository: git clone https://github.com/ethiotelecom/WANIPcalc.git
+Open the index.html file in a web browser.
+Features
+Display WAN IP, subnet mask, and default information based on user input.
+Responsive design for optimal viewing on different devices.
+Navigation menu for easy access to different sections of the website.
+Social media links for connecting with the website on Facebook, Telegram, and YouTube.
+Sections highlighting services and featured products.
+Technologies Used
+The website is built using the following technologies:
 
-// Query the database to retrieve the subnet mask and default gateway associated with the WAN IP
-$sql = "SELECT subnet_mask, default_gateway FROM wan_ip WHERE wan_ip='$wan_ip'";
-$result = $conn->query($sql);
+HTML
+CSS
+JavaScript
+Usage
+Open the website in a web browser.
+Enter your WAN IP address in the input field provided.
+Click the "Search" button to retrieve subnet mask and default information.
+Contributing
+Contributions to the project are welcome. If you find any issues or would like to suggest improvements, please open an issue or submit a pull request.
 
-// Display the subnet mask and default gateway if found, or an error message if not found
-if ($result->num_rows > 0) {
-    $row = $result->fetch_assoc();
-    $subnet_mask = $row['subnet_mask'];
-    $default_gateway = $row['default_gateway'];
-    echo "Subnet Mask: " . $subnet_mask . "<br>";
-    echo "Default Gateway: " . $default_gateway;
-} else {
-    echo "No subnet mask and default gateway found for WAN IP " . $wan_ip;
-}
-
-// Close the database connection
-$conn->close();
-?>
+License
+This project is licensed under the MIT License.
